@@ -59,6 +59,16 @@ def _session(sid: str | None) -> tuple[str, dict]:
     return sid, SESSIONS[sid]
 
 
+@app.get("/")
+async def root():
+    return {
+        "service": "Alexa Warranty Vault API",
+        "status": "online",
+        "health": "/api/health",
+        "docs": "/docs"
+    }
+
+
 @app.get("/api/health")
 async def health():
     return {"mcp_connected": await mcp_bridge.ping(),
