@@ -64,6 +64,8 @@ async def _chat(messages: list[dict], tools: list[dict]) -> dict:
     except httpx.HTTPError as e:
         raise LLMError(f"Could not reach the language model: {e}") from e
     if r.status_code != 200:
+        if r.status_code == 401:
+            raise LLMError("API key authentication failed (401). Please check your LLM_API_KEY environment variable or switch to Offline mode.")
         raise LLMError(f"Language model error {r.status_code}: {r.text[:200]}")
     try:
         return r.json()["choices"][0]["message"]
