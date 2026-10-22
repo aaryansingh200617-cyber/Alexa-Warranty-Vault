@@ -32,7 +32,8 @@ cd web-app    && npm run dev             # http://localhost:5173
 | **Offline** | nothing set, or the AI call fails | Built-in keyword + slot-filling assistant. Still calls the real MCP tools. Good for demos without internet or keys. |
 
 The header badge shows which mode is active. See `.env.example` for free provider settings.
-Check out the live Demo of the ##Warranty Vault- https://alexa-warranty-vault.vercel.app/
+
+Check out the live Demo of the ## Warranty Vault- https://alexa-warranty-vault.vercel.app/
 
 ## MCP tools
 | Tool | Purpose |
