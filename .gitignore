@@ -1,0 +1,10 @@
+.env
+*.db
+*.sqlite
+__pycache__/
+.venv/
+node_modules/
+dist/
+*.log
+.DS_Store
+Thumbs.db
