@@ -1,4 +1,4 @@
-# Warranty Vault for Alexa
+# Warranty Vault for Alexa +
 **Every purchase remembered. Every warranty protected.**
 A voice-first AI warranty assistant built on an MCP server (Python · FastMCP · Streamable HTTP · SQLite) with a React + Tailwind web app that simulates an Alexa+ style experience. Amazon-inspired design; not an official Amazon or Alexa product.
 
